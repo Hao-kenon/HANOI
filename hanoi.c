@@ -7,13 +7,15 @@
 int main()
 {
 	int i = 4;
-	printf("ÇëÊäÈëÅÌÆ¬Êý£º");
+	printf("è¯·è¾“å…¥ç›˜ç‰‡æ•°ï¼š");
 	scanf("%d", &i);
-	printf("ÒÆ¶¯%d¸öÅÌÆ¬²½ÖèÈçÏÂ£º\n", i);
+	printf("ç§»åŠ¨%dä¸ªç›˜ç‰‡æ­¥éª¤å¦‚ä¸‹ï¼š\n", i);
 	Hanoi(i, 'A', 'B', 'C');
 	return 0;
 }
 
+
+//å°†nä¸ªç›˜ç‰‡ä»Žoneåº§ï¼Œé€šè¿‡ä¸­è½¬æŸ±twoç§»åŠ¨åˆ°threeåº§
 void Hanoi(int n, char one, char two, char three)
 {
 	if (n == 1)
@@ -26,6 +28,7 @@ void Hanoi(int n, char one, char two, char three)
 	}
 }
 
+//å°†ä¸€ä¸ªç›˜ç‰‡ä»Žxåº§ç§»åŠ¨åˆ°yåº§
 void Move(char x, char y)
 {
 	printf("%c-->%c\n", x, y);
