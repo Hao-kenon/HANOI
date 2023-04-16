@@ -6,7 +6,7 @@
 
 int main()
 {
-	int i = 4;
+	int i = 0;
 	printf("请输入盘片数：");
 	scanf("%d", &i);
 	printf("移动%d个盘片步骤如下：\n", i);
